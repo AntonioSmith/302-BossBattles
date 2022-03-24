@@ -67,6 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1105373416}
   - component: {fileID: 1105373417}
+  - component: {fileID: 8627492682248574763}
   m_Layer: 0
   m_Name: IK - Foot Left
   m_TagString: Untagged
@@ -114,6 +115,18 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &8627492682248574763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105373415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a751a83f9d8a9946adb4fcfd78a98be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633880034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1189,8 @@ GameObject:
   - component: {fileID: 2015823469117050218}
   - component: {fileID: 4628317505649322770}
   - component: {fileID: 2015823469117050219}
+  - component: {fileID: 2035405856526619415}
+  - component: {fileID: 6927476973773059576}
   m_Layer: 0
   m_Name: Goon
   m_TagString: Untagged
@@ -1191,7 +1206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2557508000725825054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8440194, y: 0, z: -2.5222359}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1321,6 +1336,37 @@ MonoBehaviour:
   - {fileID: 8447706850544395423}
   - {fileID: 521163933641201391}
   - {fileID: 7335476243968226205}
+--- !u!143 &2035405856526619415
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557508000725825054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2.6
+  m_Radius: 0.54
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.4, z: 0}
+--- !u!114 &6927476973773059576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557508000725825054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3abc25e12e8cc43a985a6939f42f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &2579247136632460816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +2016,59 @@ Transform:
   m_Father: {fileID: 2897441105044516004}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4602798971437761993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4193994377273556453}
+  - component: {fileID: 8649866725457597819}
+  m_Layer: 0
+  m_Name: Hip Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4193994377273556453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602798971437761993}
+  m_LocalRotation: {x: -0.5462994, y: 0.44895023, z: 0.54630005, w: -0.4489509}
+  m_LocalPosition: {x: 1.143679e-22, y: 1.0106037, z: -0.1088988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189194460732336788}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8649866725457597819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602798971437761993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf219326d2292de48a0c671da18d402b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_ConstrainedObject: {fileID: 4169467608024365111}
+    m_OverrideSource: {fileID: 4193994377273556453}
+    m_OverridePosition: {x: 0, y: 0, z: 0}
+    m_OverrideRotation: {x: 0, y: 0, z: 0}
+    m_PositionWeight: 1
+    m_RotationWeight: 1
+    m_Space: 2
 --- !u!1 &4730683595429782591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2198,7 @@ Transform:
   m_Children:
   - {fileID: 1105373416}
   - {fileID: 994744893}
+  - {fileID: 4193994377273556453}
   m_Father: {fileID: 2897441105044516004}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2155,6 +2255,14 @@ MonoBehaviour:
       size: 0.29
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 4193994377273556453}
+    m_Style:
+      shape: {fileID: 4300000, guid: b43e6ef97ee1b4e31be1a0187b9f4495, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.95
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 90}
     m_Visible: 1
 --- !u!1 &5236140746780352166
 GameObject:
