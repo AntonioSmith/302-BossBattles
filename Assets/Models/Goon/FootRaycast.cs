@@ -18,10 +18,10 @@ public class FootRaycast : MonoBehaviour
     {
         Vector3 origin = transform.position + Vector3.up * raycastLength/2;
         Vector3 direction = Vector3.down;
-        float maxDistance = 1;
+        float maxDistance = 2;
 
         // Draw ray in scene
-        Debug.DrawRay(origin, direction * raycastLength, Color.blue);
+        Debug.DrawRay(origin, direction * maxDistance, Color.blue);
 
         // Check for collision with ray:
         if (Physics.Raycast(origin, direction, out RaycastHit hitInfo, maxDistance))
