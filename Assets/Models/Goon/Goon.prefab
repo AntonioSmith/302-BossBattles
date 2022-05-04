@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994744893}
   - component: {fileID: 994744894}
+  - component: {fileID: 1782494848}
   m_Layer: 0
   m_Name: IK - Foot Right
   m_TagString: Untagged
@@ -57,6 +58,21 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &1782494848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994744892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a751a83f9d8a9946adb4fcfd78a98be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footLeft: {fileID: 1105373416}
+  footRight: {fileID: 994744893}
+  raycastLength: 2
 --- !u!1 &1105373415
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a751a83f9d8a9946adb4fcfd78a98be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footLeft: {fileID: 1105373416}
+  footRight: {fileID: 994744893}
   raycastLength: 2
 --- !u!1 &1633880034
 GameObject:
@@ -1367,6 +1385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3abc25e12e8cc43a985a6939f42f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footLeft: {fileID: 8627492682248574763}
+  footRight: {fileID: 1782494848}
   speed: 4
 --- !u!1 &2579247136632460816
 GameObject:
@@ -2027,6 +2047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4193994377273556453}
   - component: {fileID: 8649866725457597819}
+  - component: {fileID: 1204030147}
   m_Layer: 0
   m_Name: Hip Controller
   m_TagString: Untagged
@@ -2070,6 +2091,53 @@ MonoBehaviour:
     m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 2
+--- !u!114 &1204030147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602798971437761993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10bdb03db33fb148b858a4a3b646cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_ConstrainedObject: {fileID: 4193994377273556453}
+    m_SourceObjects:
+      m_Length: 2
+      m_Item0:
+        transform: {fileID: 1105373416}
+        weight: 1
+      m_Item1:
+        transform: {fileID: 994744893}
+        weight: 1
+      m_Item2:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item3:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item4:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item5:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item6:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item7:
+        transform: {fileID: 0}
+        weight: 0
+    m_Offset: {x: 0, y: 0, z: 0}
+    m_ConstrainedAxes:
+      x: 1
+      y: 1
+      z: 1
+    m_MaintainOffset: 1
 --- !u!1 &4730683595429782591
 GameObject:
   m_ObjectHideFlags: 0
